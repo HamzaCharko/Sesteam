@@ -3273,10 +3273,7 @@ client.on('guildMemberAdd', member => {
 
 
 
-client.user.setGame(` =help | Yasmine✨ `,"https://www.twitch.tv/S-F")
 
-client.user.setGame(` =help | Yasmine✨ `,"https://www.twitch.tv/S-F")
-	
 	
 client.login(process.env.BOT_TOKEN);
  
