@@ -1,4 +1,4 @@
-'const Discord = require('discord.js');
+const Discord = require('discord.js');
 const Canvas = require('canvas')
 const client = new Discord.Client();
 const prefix = '=';
