@@ -335,7 +335,7 @@ client.on('guildCreate', guild => {
          const embed = new Discord.RichEmbed()
      .setColor("RED")
      .setTitle('Click Here To Add Bot .!')
-     .setURL('https://discordapp.com/api/oauth2/authorize?client_id=484098782158651392&permissions=8&scope=bot')
+     .setURL('https://discordapp.com/api/oauth2/authorize?client_id=561159128857182222&permissions=0&scope=bot')
   .setDescription(`**
 اسم السيرفر: ${guild.name}
 صاحب السيرفر: ${guild.owner}**`);
@@ -346,9 +346,9 @@ client.on('guildDelete', guild => {
          const embed = new Discord.RichEmbed()
      .setColor("GOLD")
      .setTitle('Click Here To Add Bot .!')
-     .setURL('https://discordapp.com/api/oauth2/authorize?client_id=484098782158651392&permissions=8&scope=bot')
+     .setURL('https://discordapp.com/api/oauth2/authorize?client_id=561159128857182222&permissions=0&scope=bot')
   .setDescription(`**
-  Server Kicked Legend System :cry:
+  Server Kicked BP System :cry:
 اسم السيرفر: ${guild.name}
 صاحب السيرفر: ${guild.owner}**`);
 client.channels.get("523159342095269898").sendEmbed(embed)
@@ -358,7 +358,7 @@ client.channels.get("523159342095269898").sendEmbed(embed)
 client.on('message', message => {
             if(!message.channel.guild) return;
 let args = message.content.split(' ').slice(1).join(' ');
-if (message.content.startsWith('LG=bcall')){
+if (message.content.startsWith('=owner')){
  if (message.author.id !== '523159342095269898') return message.reply('** هذا الأمر قفط لصاحب البوت و شكراًً **')
  if(!message.author.id === '523159342095269898') return;
 message.channel.sendMessage('جار ارسال الرسالة |✅')
