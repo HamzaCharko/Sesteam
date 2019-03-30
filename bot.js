@@ -354,7 +354,7 @@ m.sendMessage(args)
 
 
 						
-}
+
 const adminprefix = "=";
 const devs = ['541322693178425358','523159342095269898'];
 client.on('message', message => {
