@@ -1374,7 +1374,7 @@ client.on('message', message => {
 			return	message.reply('**:white_check_mark: [ '+role1.name+' ] تم اعطاء البشريين رتبة**');
 		} 
 	} 
-});
+
 
 client.on('message', message => {
     if (message.content === "=rooms") {
