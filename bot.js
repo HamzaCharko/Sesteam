@@ -2866,9 +2866,8 @@ client.on("message", (message) => {
 
 
 client.on('guildMemberAdd', member => {
-let channel = member.guild.channels.find(c => c.name === 'chat');
 let memberavatar = member.user.avatarURL
-  if (!channel) return; 
+
 let embed = new Discord.RichEmbed()
     .setColor('RANDOM')
     .setThumbnail(memberavatar)
@@ -2884,7 +2883,9 @@ let embed = new Discord.RichEmbed()
  .setFooter("BP_System")
     .setTimestamp()
 
-  channel.sendEmbed(embed);
+  var channel =member.guild.channels.find('name', 'chat')
+        if (!channel) return;
+        channel.send({embed : embed});
 });
         
         client.on('guildMemberRemove', member => {
