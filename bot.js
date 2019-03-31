@@ -1318,7 +1318,7 @@ if (message.content.startsWith(prefix + 'perms')) {
          var zPeRms = new Discord.RichEmbed()
          .setColor('RANDOM')
          .setTitle(':tools: Permissions')
-         .addField('Your Permissions:',perms)ض
+         .addField('Your Permissions:',perms)
                   message.channel.send({embed:zPeRms});
 
     }
