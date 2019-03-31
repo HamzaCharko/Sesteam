@@ -2164,8 +2164,8 @@ if (message.content.startsWith("=setVoice")) {
 
 
 client.on('message', message => {
-    if (message.content === 'هاي') {
-        message.reply('♪ هــأايات أطلـَـق ولكــم☆');
+    if (message.content === 'باك') {
+        message.reply('ولكم باك .☆');
       }
 });
 
@@ -2173,28 +2173,28 @@ client.on('message', message => {
 
 
 client.on('message', message => {
-    if (message.content === '....') {
-        message.reply('♪أطلـَـق من نقط, يلــبى بس ☆');
+    if (message.content === 'هلا') {
+        message.reply('هلا بيك حبيبي \');
       }
 });
 
 
 client.on('message', message => {
-    if (message.content === '...') {
-        message.reply('♪أطلـَـق من نقط, يلــبى بس ☆');
+    if (message.content === 'فاك يو') {
+        message.reply('ممنوع سب لو سمحت');
       }
 });
 
 
 client.on('message', message => {
-    if (message.content === '..') {
-        message.reply('♪أطلـَـق من نقط, يلــبى بس ☆');
+    if (message.content === 'حمزة') {
+        message.reply('قول لو بالخاص ..');
       }
 });
 
 client.on('message', message => {
-    if (message.content === '.') {
-        message.reply('♪أطلـَـق من نقط, يلــبى بس ☆');
+    if (message.content === 'زق') {
+        message.reply('زي وجهك');
       }
 });
 
@@ -2204,11 +2204,11 @@ client.on('message', message => {
 
 client.on("message", (message) => {
     if (message.content.startsWith('=delet')) {
-        if (!message.member.hasPermission('MANAGE_CHANNELS')) return message.reply("You Don't Have `MANAGE_CHANNELS` Premissions ");
+        if (!message.member.hasPermission('MANAGE_CHANNELS')) return message.reply("   `MANAGE_CHANNELS` ليس لديك صلاحية ");
 
         let args = message.content.split(' ').slice(1);
         let channel = message.client.channels.find('name', args.join(' '));
-        if (!channel) return message.reply('**There is no room like this name -_-**').catch(console.error);
+        if (!channel) return message.reply('**ليس هناك أي روم بهاذا الإسم**').catch(console.error);
         channel.delete()
     }
 });  
@@ -2799,7 +2799,7 @@ client.on('message',async message => {
 
 client.on('message', message => {
     if(message.content.includes('discord.gg')){
-                                            if(!message.channel.guild) return message.reply('** advertising me on DM ? 🤔   **');
+                                            if(!message.channel.guild) return message.reply('**إحذر !!**');
         if (!message.member.hasPermissions(['ADMINISTRATOR'])){
         message.delete()
     return message.reply(`** ممنوع نشر الروابط :angry: ! **`)
