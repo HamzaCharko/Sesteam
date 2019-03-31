@@ -2865,43 +2865,6 @@ client.on("message", (message) => {
 
 
 
-client.on('guildMemberAdd', member => {
-let memberavatar = member.user.avatarURL
-
-let embed = new Discord.RichEmbed()
-    .setColor('RANDOM')
-    .setThumbnail(memberavatar)
-    .addField('🎽 | الاسم :  ',`${member}`)
-    .addField('📢 | انضم:' , `انضم عندنا عضو جديد , ${member}:grinning:  `)
-    .addField('🆔 | الايدي :', "**[" + `${member.id}` + "]**" )
-            .addField('➡| اصبحوا',`${member.guild.memberCount}`)
-           
-              .addField("الاسم:",`<@` + `${member.id}` + `>`, true)
-                
-                                 .addField('شكرا لدخولك سيرفر', `${member.guild.name}`,true)
-                                   
- .setFooter("BP_System")
-    .setTimestamp()
-
-  var channel =member.guild.channels.find('name', 'chat')
-        if (!channel) return;
-        channel.send({embed : embed});
-});
-        
-        client.on('guildMemberRemove', member => {
-            var embed = new Discord.RichEmbed()
-            .setAuthor(member.user.username, member.user.avatarURL)
-            .setThumbnail(member.user.avatarURL)
-            .setTitle(` مع السلامه ✋ 😔`)
-            .setDescription (`اتمنى تكون إستمتعت😔 `)
-            .addField('👤  ',`**[ ${member.guild.memberCount} ]**`,true)
-            .setColor('RED')
-            .setFooter(`==== نــتــمــنــآ لــكــم آســتــمـــتــآع ====`, 'https://cdn.discordapp.com/attachments/397818254439219217/399292026782351381/shy.png')
-        
-        var channel =member.guild.channels.find('name', 'chat')
-        if (!channel) return;
-        channel.send({embed : embed});
-        })
 
 const lol = JSON.parse(fs.readFileSync("lol.json", "utf8"))
 function hi (message, args){
